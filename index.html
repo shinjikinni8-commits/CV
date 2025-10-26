@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Luforova Anastasia</h1>
+        <img src="https://via.placeholder.com/150" alt="here will be my pic">
+        <p class="placeholder">Short description: my bio.</p>
+        <ul>
+            <li>Email: example@email.com</li>
+            <li>Phone: +38 (096) 802 54-57</li>
+            <li><a href="#">...</a></li>
+        </ul>
+    </header>
+    <section id="about">
+        <h2 onclick="toggleSection('about-content')">About myself...</h2>
+        <div id="about-content" class="section-content">
+            <p class="placeholder">About myself...</p>
+        </div>
+    </section>
+    <section id="experience">
+        <h2 onclick="toggleSection('experience-content')">...</h2>
+        <div id="experience-content" class="section-content">
+            <ul>
+                <li class="placeholder">...</li>
+                <li class="placeholder">...</li>
+            </ul>
+        </div>
+    </section>
+    <section id="education">
+        <h2 onclick="toggleSection('education-content')">Education</h2>
+        <div id="education-content" class="section-content">
+            <ul>
+                <li class="placeholder">IT Step Collage - Designer</li>
+            </ul>
+        </div>
+    </section>
+    <section id="skills">
+        <h2 onclick="toggleSection('skills-content')">Skills</h2>
+        <div id="skills-content" class="section-content">
+            <ul>
+                <li class="placeholder">Skills...</li>
+                <li class="placeholder">Skills...</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p class="placeholder">Contacts:...</p>
+        <p>© 2025 Luforova Anastasia</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
