@@ -1,42 +1,23 @@
+/* === ОСНОВНІ СТИЛІ === */
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #FFFFFF;
     color: #2E7D32;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 h1,
-h2 {
+h2,
+h3 {
     font-family: 'Montserrat', sans-serif;
     color: #4CAF50;
-}
-
-section {
-    background-color: #E8F5E9;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 8px;
-}
-
-.placeholder {
-    color: #FF0000;
-}
-
-header {
-    text-align: center;
-    padding: 40px;
-    background-color: #C8E6C9;
-}
-
-img {
-    max-width: 150px;
-    border-radius: 50%;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
+    margin: 0 0 10px 0;
 }
 
 a {
@@ -46,46 +27,259 @@ a {
 
 a:hover {
     color: #2E7D32;
+    text-decoration: underline;
 }
 
-footer {
+.placeholder {
+    color: #FF0000;
+    font-style: italic;
+}
+
+/* === ШАПКА === */
+header {
     text-align: center;
-    padding: 20px;
+    padding: 70px 20px 50px;
     background-color: #C8E6C9;
+    position: relative;
+    min-height: 280px;
 }
 
-@media (max-width: 1024px) {
+.photo-container {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
 
-    section {
-        padding: 15px;
-        margin: 5px;
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 6px solid #FFFFFF;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 10;
+}
+
+/* === ЛЕВІТУЮЧІ КРУГИ === */
+.orbit-circle {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: #4CAF50;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 5;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    /* Курсор-стрілка */
+    transition: all 0.3s ease;
+}
+
+/* Позиції кіл */
+.orbit-circle:nth-child(1) {
+    top: -20px;
+    left: 40px;
+}
+
+.orbit-circle:nth-child(2) {
+    top: 80px;
+    right: -20px;
+}
+
+.orbit-circle:nth-child(3) {
+    bottom: -20px;
+    left: 40px;
+}
+
+/* ЛЕВІТАЦІЯ + КОЛИВАННЯ */
+.orbit-circle:nth-child(1) {
+    animation: levitate 4s ease-in-out infinite;
+}
+
+.orbit-circle:nth-child(2) {
+    animation: levitate 4s ease-in-out infinite 1.3s;
+}
+
+.orbit-circle:nth-child(3) {
+    animation: levitate 4s ease-in-out infinite 2.6s;
+}
+
+@keyframes levitate {
+
+    0%,
+    100% {
+        transform: translateY(0px) translateX(0px);
     }
 
-    img {
-        max-width: 120px;
+    25% {
+        transform: translateY(-10px) translateX(5px);
+    }
+
+    50% {
+        transform: translateY(-20px) translateX(-5px);
+    }
+
+    75% {
+        transform: translateY(-10px) translateX(5px);
     }
 }
 
-@media (max-width: 768px) {
+/* Hover ефект */
+.orbit-circle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
 
-    header {
-        padding: 20px;
-    }
-
-    section {
-        padding: 10px;
-        margin: 0;
-    }
-
-    ul {
-        text-align: center;
-    }
+/* === СЕКЦІЇ + КАРТКИ + ПРОЄКТИ === */
+/* (ВСЕ БЕЗ ЗМІН - копіюй з попереднього) */
+section {
+    background-color: #E8F5E9;
+    padding: 22px;
+    margin: 18px 20px;
+    border-radius: 14px;
+    border-left: 5px solid #4CAF50;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
 }
 
 .section-content {
     display: none;
+    padding-top: 12px;
 }
 
 .section-content.active {
     display: block;
+}
+
+.project-card {
+    background: #FFFFFF;
+    padding: 18px;
+    margin: 14px 0;
+    border-radius: 12px;
+    border: 1px solid #C8E6C9;
+    transition: all 0.25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(76, 175, 80, 0.2);
+    border-color: #4CAF50;
+}
+
+.project-card h3 a {
+    color: #2E7D32;
+    font-weight: bold;
+}
+
+.project-card h3 a:hover {
+    color: #4CAF50;
+}
+
+.project-header {
+    background: #C8E6C9;
+    padding: 25px 20px;
+    text-align: center;
+    position: relative;
+    border-bottom: 3px solid #4CAF50;
+}
+
+.back-link {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15px;
+    color: #2E7D32;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    color: #4CAF50;
+}
+
+.project-page {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.project-content img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin: 18px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.project-links {
+    list-style: none;
+    padding: 0;
+    margin: 18px 0 0;
+}
+
+.project-links li {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.project-links a {
+    background: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.95em;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.project-links a:hover {
+    background: #2E7D32;
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #C8E6C9;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+/* АДАПТИВНІСТЬ */
+@media (max-width: 768px) {
+    header {
+        padding: 60px 15px 40px;
+    }
+
+    .photo-container {
+        width: 120px;
+        height: 120px;
+    }
+
+    .orbit-circle {
+        width: 50px;
+        height: 50px;
+        font-size: 9px;
+    }
+
+    .orbit-circle:nth-child(1) {
+        top: -10px;
+        left: 20px;
+    }
+
+    .orbit-circle:nth-child(2) {
+        top: 60px;
+        right: -10px;
+    }
+
+    .orbit-circle:nth-child(3) {
+        bottom: -10px;
+        left: 20px;
+    }
 }

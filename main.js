@@ -1,6 +1,6 @@
 function toggleSection(id) {
-    var element = document.getElementById(id);
-    element.classList.toggle('active');
+    const el = document.getElementById(id);
+    el.classList.toggle('active');
 }
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
