@@ -13,22 +13,14 @@
 <body>
     <header>
         <div class="photo-container">
-            <img src="https://via.placeholder.com/150" alt="Фото" class="profile-photo">
-
-            <!-- Клікабельні левітуючі кружечки -->
-            <a href="./project-html-css.html" class="orbit-circle">
-                <span>HTML/CSS</span>
-            </a>
-            <a href="./project-cpp.html" class="orbit-circle">
-                <span>C++</span>
-            </a>
-            <a href="./project-2d.html" class="orbit-circle">
-                <span>2D Дизайн</span>
-            </a>
+            <img src="" alt="photo" class="profile-photo">
+            <a href="./project-html-css.html" class="orbit-circle"><span>HTML/CSS</span></a>
+            <a href="./project-cpp.html" class="orbit-circle"><span>C++</span></a>
+            <a href="./project-2d.html" class="orbit-circle"><span>2D Дизайн</span></a>
         </div>
 
-        <h1>Ім'я Прізвище</h1>
-        <p class="placeholder">Студент IT-коледжу, 16 років. Вчуся на розробника.</p>
+        <h1>Луфьорова Анастасія</h1>
+        <p class="placeholder">Студентка IT-коледжу, 16 років. Вчуся на розробника.</p>
         <ul>
             <li>Email: example@email.com</li>
             <li>Phone: +123456789</li>
@@ -38,58 +30,53 @@
 
     <!-- === ПРОЄКТИ === -->
     <section id="projects">
-        <h2 onclick="toggleSection('projects-content')">Проєкти (клікни щоб розгорнути)</h2>
+        <h2 onclick="toggleSection('projects-content')" style="cursor: pointer;">Проєкти (клікни)</h2>
         <div id="projects-content" class="section-content">
             <div class="project-card">
                 <h3><a href="./project-html-css.html">Сайт на HTML, CSS</a></h3>
-                <p class="placeholder">Короткий опис…</p>
+                <img src="https://via.placeholder.com/300x180?text=MetalBands" alt="Прев’ю" class="project-thumb">
+                <p>Статичний сайт про метал-гурти</p>
             </div>
             <div class="project-card">
                 <h3><a href="./project-2d.html">2D Дизайн</a></h3>
-                <p class="placeholder">Короткий опис…</p>
+                <img src="https://i.ibb.co/JWJtGJjN/image.png" alt="Прев’ю" class="project-thumb">
+                <p>Макети в Figma</p>
             </div>
             <div class="project-card">
                 <h3><a href="./project-cpp.html">C++ Проєкт</a></h3>
-                <p class="placeholder">Короткий опис…</p>
+                <img src="https://via.placeholder.com/300x180/2d2d2d/ffffff?text=C%2B%2B+File+IO" alt="Прев’ю"
+                    class="project-thumb">
+                <p>Робота з файловими потоками</p>
             </div>
         </div>
     </section>
 
     <!-- === ПРО МЕНЕ === -->
     <section id="about">
-        <h2 onclick="toggleSection('about-content')">Про мене</h2>
+        <h2 onclick="toggleSection('about-content')" style="cursor: pointer;">Про мене (клікни)</h2>
         <div id="about-content" class="section-content">
-            <p class="placeholder">Привіт! Мені 16, навчаюся в IT-коледжі. Цікавлюся веб-розробкою, програмуванням на
-                C++ та 2D-дизайном. Поки що все — це навчальні проєкти, але я активно розвиваюся!</p>
+            <p>щось буде...</p>
         </div>
     </section>
 
     <!-- === ОСВІТА === -->
     <section id="education">
-        <h2 onclick="toggleSection('education-content')">Освіта</h2>
+        <h2 onclick="toggleSection('education-content')" style="cursor: pointer;">Освіта (клікни)</h2>
         <div id="education-content" class="section-content">
-            <ul>
-                <li><strong>IT-коледж</strong> — Програмна інженерія (2024 – зараз)</li>
-                <li class="placeholder">Середня школа — закінчив у 2024</li>
-            </ul>
+            <p>щось буде...</p>
         </div>
     </section>
 
     <!-- === НАВИЧКИ === -->
     <section id="skills">
-        <h2 onclick="toggleSection('skills-content')">Навички</h2>
+        <h2 onclick="toggleSection('skills-content')" style="cursor: pointer;">Навички (клікни)</h2>
         <div id="skills-content" class="section-content">
-            <ul>
-                <li>HTML/CSS — базовий рівень</li>
-                <li>C++ — базовий рівень</li>
-                <li>Figma — базовий дизайн</li>
-                <li class="placeholder">Git, VS Code</li>
-            </ul>
+            <p>щось буде...</p>
         </div>
     </section>
 
     <footer>
-        <p>© 2025 Ім'я Прізвище | Студент IT-коледжу</p>
+        <p>© 2025 Луфьорова Анастасія | Студентка IT-коледжу</p>
     </footer>
 
     <script src="./script.js"></script>

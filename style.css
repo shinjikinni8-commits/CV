@@ -283,3 +283,50 @@ footer {
         left: 20px;
     }
 }
+
+.console-output {
+    background: #1e1e1e;
+    color: #d4d4d4;
+    padding: 16px;
+    border-radius: 10px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.95em;
+    margin: 18px 0;
+    border: 1px solid #333;
+    overflow-x: auto;
+}
+
+.console-output code {
+    color: #9cdcfe;
+}
+
+/* === РОЗГОРТКА БЛОКІВ === */
+section {
+    background-color: #E8F5E9;
+    margin: 18px 20px;
+    border-radius: 14px;
+    border-left: 5px solid #4CAF50;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+}
+
+section h2 {
+    margin: 0;
+    padding: 16px 22px;
+    background-color: #E8F5E9;
+    cursor: pointer;
+    user-select: none;
+}
+
+.section-content {
+    display: none;
+    padding: 0 22px 22px;
+}
+
+.project-thumb {
+    width: 100%;
+    max-height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px 0;
+}
