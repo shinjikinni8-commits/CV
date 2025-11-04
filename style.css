@@ -1,4 +1,3 @@
-/* === ОСНОВНІ СТИЛІ === */
 * {
     box-sizing: border-box;
 }
@@ -35,7 +34,6 @@ a:hover {
     font-style: italic;
 }
 
-/* === ШАПКА === */
 header {
     text-align: center;
     padding: 70px 20px 50px;
@@ -62,7 +60,6 @@ header {
     z-index: 10;
 }
 
-/* === ЛЕВІТУЮЧІ КРУГИ === */
 .orbit-circle {
     position: absolute;
     width: 70px;
@@ -79,11 +76,9 @@ header {
     z-index: 5;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    /* Курсор-стрілка */
     transition: all 0.3s ease;
 }
 
-/* Позиції кіл */
 .orbit-circle:nth-child(1) {
     top: -20px;
     left: 40px;
@@ -99,7 +94,6 @@ header {
     left: 40px;
 }
 
-/* ЛЕВІТАЦІЯ + КОЛИВАННЯ */
 .orbit-circle:nth-child(1) {
     animation: levitate 4s ease-in-out infinite;
 }
@@ -138,8 +132,6 @@ header {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* === СЕКЦІЇ + КАРТКИ + ПРОЄКТИ === */
-/* (ВСЕ БЕЗ ЗМІН - копіюй з попереднього) */
 section {
     background-color: #E8F5E9;
     padding: 22px;
@@ -251,7 +243,6 @@ footer {
     font-size: 0.9em;
 }
 
-/* АДАПТИВНІСТЬ */
 @media (max-width: 768px) {
     header {
         padding: 60px 15px 40px;
@@ -300,7 +291,6 @@ footer {
     color: #9cdcfe;
 }
 
-/* === РОЗГОРТКА БЛОКІВ === */
 section {
     background-color: #E8F5E9;
     margin: 18px 20px;
