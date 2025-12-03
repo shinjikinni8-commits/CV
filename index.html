@@ -4,75 +4,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мій CV - Студентка IT-коледжу</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap"
+    <title>Луфьорова Анастасія — Портфоліо</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+
     <header>
-        <div class="photo-container">
-            <img src="" alt="photo" class="profile-photo">
-            <a href="./project-html-css.html" class="orbit-circle"><span>HTML/CSS</span></a>
-            <a href="./project-cpp.html" class="orbit-circle"><span>C++</span></a>
-            <a href="./project-2d.html" class="orbit-circle"><span>2D Дизайн</span></a>
-        </div>
+        <img src="https://via.placeholder.com/160/333/fff?text=Фото" alt="Луфьорова Анастасія" class="profile-photo">
 
         <h1>Луфьорова Анастасія</h1>
-        <p class="placeholder">Студентка IT-коледжу, 16 років. Вчуся на розробника.</p>
-        <ul>
-            <li>Email: example@email.com</li>
-            <li>Phone: +123456789</li>
-            <li><a href="#">LinkedIn: linkedin.com/in/username</a></li>
+        <p>Студентка IT-коледжу • 16 років • Програмна інженерія</p>
+
+        <div class="quick-links">
+            <a href="./project-html-css.html">HTML/CSS проєкт</a>
+            <a href="./project-cpp.html">C++ проєкт</a>
+            <a href="./project-2d.html">2D Дизайн</a>
+        </div>
+
+        <ul class="contacts">
+            <li>Email: nastya.lufyorova@example.com</li>
+            <li>Telegram: @nastyaluf</li>
+            <li>GitHub: shinjikinni8-commits</li>
         </ul>
     </header>
 
-    <section id="projects">
-        <h2 onclick="toggleSection('projects-content')" style="cursor: pointer;">Проєкти (клікни)</h2>
+    <!-- Проєкти -->
+    <section>
+        <h2 onclick="toggleSection('projects-content')">Проєкти</h2>
         <div id="projects-content" class="section-content">
             <div class="project-card">
-                <h3><a href="./project-html-css.html">Сайт на HTML, CSS</a></h3>
-                <img src="https://via.placeholder.com/300x180?text=MetalBands" alt="Прев’ю" class="project-thumb">
-                <p>Статичний сайт про метал-гурти</p>
+                <h3><a href="./project-html-css.html">Сайт про метал-гурти</a></h3>
+                <img src="https://via.placeholder.com/300x180/333/ccc?text=Metal+Bands" class="project-thumb">
+                <p>Статичний сайт на чистому HTML + CSS. Адаптивна верстка.</p>
             </div>
             <div class="project-card">
-                <h3><a href="./project-2d.html">2D Дизайн</a></h3>
-                <img src="https://i.ibb.co/JWJtGJjN/image.png" alt="Прев’ю" class="project-thumb">
-                <p>Макети в Figma</p>
+                <h3><a href="./project-2d.html">2D Дизайн у Figma</a></h3>
+                <img src="https://i.ibb.co/JWJtGJjN/image.png" class="project-thumb">
+                <p>5 навчальних макетів сайтів, UI/UX, сітки, типографіка.</p>
             </div>
             <div class="project-card">
-                <h3><a href="./project-cpp.html">C++ Проєкт</a></h3>
-                <img src="https://via.placeholder.com/300x180/2d2d2d/ffffff?text=C%2B%2B+File+IO" alt="Прев’ю"
-                    class="project-thumb">
-                <p>Робота з файловими потоками</p>
+                <h3><a href="./project-cpp.html">C++ — Робота з файлами</a></h3>
+                <img src="https://via.placeholder.com/300x180/333/ccc?text=C%2B%2B" class="project-thumb">
+                <p>Програма запису та читання текстових файлів (fstream).</p>
             </div>
         </div>
     </section>
 
-    <section id="about">
-        <h2 onclick="toggleSection('about-content')" style="cursor: pointer;">Про мене (клікни)</h2>
+    <section>
+        <h2 onclick="toggleSection('about-content')">Про мене</h2>
         <div id="about-content" class="section-content">
-            <p>щось буде...</p>
+            <p>Привіт! Мені 16, навчаюся в IT-коледжі. Цікавлюся веб-розробкою, дизайном інтерфейсів та програмуванням
+                на C++. Усе, що тут є — мої навчальні проєкти, але я швидко вчуся і прагну більшого!</p>
         </div>
     </section>
 
-    <section id="education">
-        <h2 onclick="toggleSection('education-content')" style="cursor: pointer;">Освіта (клікни)</h2>
+    <section>
+        <h2 onclick="toggleSection('education-content')">Освіта</h2>
         <div id="education-content" class="section-content">
-            <p>щось буде...</p>
+            <p>IT-коледж — Програмна інженерія (2024–наразі)</p>
         </div>
     </section>
 
-    <section id="skills">
-        <h2 onclick="toggleSection('skills-content')" style="cursor: pointer;">Навички (клікни)</h2>
+    <section>
+        <h2 onclick="toggleSection('skills-content')">Навички</h2>
         <div id="skills-content" class="section-content">
-            <p>щось буде...</p>
+            <ul class="skills-list">
+                <li>HTML / CSS (Flexbox, Grid, адаптив)</li>
+                <li>C++ (базовий рівень, робота з файлами)</li>
+                <li>Figma (UI/UX дизайн)</li>
+                <li>Git + GitHub</li>
+                <li>VS Code, Replit</li>
+            </ul>
         </div>
     </section>
 
     <footer>
-        <p>© 2025 Луфьорова Анастасія | Студентка IT-коледжу</p>
+        <p>© 2025 Луфьорова Анастасія</p>
     </footer>
 
     <script src="./script.js"></script>
