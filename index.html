@@ -5,85 +5,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Луфьорова Анастасія — Портфоліо</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap"
-        rel="stylesheet">
+    
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@700,600,500,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-    <header>
-        <img src="https://via.placeholder.com/160/333/fff?text=Фото" alt="Луфьорова Анастасія" class="profile-photo">
-
-        <h1>Луфьорова Анастасія</h1>
-        <p>Студентка IT-коледжу • 16 років • Програмна інженерія</p>
-
-        <div class="quick-links">
-            <a href="./project-html-css.html">HTML/CSS проєкт</a>
-            <a href="./project-cpp.html">C++ проєкт</a>
-            <a href="./project-2d.html">2D Дизайн</a>
-        </div>
-
-        <ul class="contacts">
-            <li>Email: nastya.lufyorova@example.com</li>
-            <li>Telegram: @nastyaluf</li>
-            <li>GitHub: shinjikinni8-commits</li>
-        </ul>
-    </header>
-
-    <!-- Проєкти -->
-    <section>
-        <h2 onclick="toggleSection('projects-content')">Проєкти</h2>
-        <div id="projects-content" class="section-content">
-            <div class="project-card">
-                <h3><a href="./project-html-css.html">Сайт про метал-гурти</a></h3>
-                <img src="https://via.placeholder.com/300x180/333/ccc?text=Metal+Bands" class="project-thumb">
-                <p>Статичний сайт на чистому HTML + CSS. Адаптивна верстка.</p>
+    <div class="portfolio">
+        <!-- Header -->
+        <header class="header">
+            <div class="profile">
+                <div class="photo-wrapper">
+                    <img src="./pic/photo_2025-12-08_19-15-45.jpg" alt="Луфьорова Анастасія" class="profile-photo">
+                </div>
+                <div class="info">
+                    <h1 class="name">Луфьорова Анастасія</h1>
+                    <p class="subtitle">Студентка IT STEP коледжу</p>
+                    <p class="bio">16 років. Вчуся веб-розробці, графічному дизайну та програмуванню.</p>
+                </div>
             </div>
-            <div class="project-card">
-                <h3><a href="./project-2d.html">2D Дизайн у Figma</a></h3>
-                <img src="https://i.ibb.co/JWJtGJjN/image.png" class="project-thumb">
-                <p>5 навчальних макетів сайтів, UI/UX, сітки, типографіка.</p>
+        </header>
+
+        <!-- Навички -->
+        <section class="skills">
+            <h2 class="section-title">Навички</h2>
+            <div class="skills-grid">
+                <div class="skill">HTML/CSS</div>
+                <div class="skill">C++</div>
+                <div class="skill">Photoshop</div>
+                <div class="skill">Illustrator</div>
             </div>
-            <div class="project-card">
-                <h3><a href="./project-cpp.html">C++ — Робота з файлами</a></h3>
-                <img src="https://via.placeholder.com/300x180/333/ccc?text=C%2B%2B" class="project-thumb">
-                <p>Програма запису та читання текстових файлів (fstream).</p>
+        </section>
+
+        <!-- Проєкти -->
+        <section class="projects">
+            <h2 class="section-title">Проєкти</h2>
+            <div class="projects-grid">
+                <a href="./project-html-css.html" class="project-card">
+                    <div class="project-title">Сайт про метал-гурти</div>
+                    <p>HTML + CSS</p>
+                </a>
+                <a href="./project-2d.html" class="project-card">
+                    <div class="project-title">Графічний дизайн</div>
+                    <p>Роботи в Photoshop та Illustrator</p>
+                </a>
+                <a href="./project-cpp.html" class="project-card">
+                    <div class="project-title">C++ — Файли</div>
+                    <p>Програма для роботи з файлами</p>
+                </a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section>
-        <h2 onclick="toggleSection('about-content')">Про мене</h2>
-        <div id="about-content" class="section-content">
-            <p>Привіт! Мені 16, навчаюся в IT-коледжі. Цікавлюся веб-розробкою, дизайном інтерфейсів та програмуванням
-                на C++. Усе, що тут є — мої навчальні проєкти, але я швидко вчуся і прагну більшого!</p>
-        </div>
-    </section>
+        <!-- Про мене + Освіта -->
+        <section class="about">
+            <h2 class="section-title">Про мене</h2>
+            <div class="about-content">
+                <p>Студентка другого курсу IT STEP коледжу. Більш за всього цікавлюся графічним дизайном та планую бути
+                    розробницею відео ігр/дизайнеркою персонажів. Вже маю деякі навички у створенні оригінальних персонажів.
+                    Займаюся творчою діяльністю, граю на барабанах, малюю, люблю слухати музику, цікавлюся історією,
+                    займаюся спортом, також граю у разноманітні відео ігри.
+                    Вільно розмовляю українською, російською та доббре володію англійською. У майбутньому хочу вивчити норвезьку та іспанську мови.
+                </p>
+                <p class="highlight">IT STEP коледж (2024–наразі)</p>
+            </div>
+        </section>
 
-    <section>
-        <h2 onclick="toggleSection('education-content')">Освіта</h2>
-        <div id="education-content" class="section-content">
-            <p>IT-коледж — Програмна інженерія (2024–наразі)</p>
-        </div>
-    </section>
-
-    <section>
-        <h2 onclick="toggleSection('skills-content')">Навички</h2>
-        <div id="skills-content" class="section-content">
-            <ul class="skills-list">
-                <li>HTML / CSS (Flexbox, Grid, адаптив)</li>
-                <li>C++ (базовий рівень, робота з файлами)</li>
-                <li>Figma (UI/UX дизайн)</li>
-                <li>Git + GitHub</li>
-                <li>VS Code, Replit</li>
-            </ul>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2025 Луфьорова Анастасія</p>
-    </footer>
+        <!-- Контакти — тільки email -->
+        <section class="contacts">
+            <h2 class="section-title">Контакти</h2>
+            <div class="contacts-list">
+                <a href="mailto:anastasiya.lufyorova@example.com" class="contact-item">
+                    anastasiya.lufyorova@example.com
+                </a>
+            </div>
+        </section>
+    </div>
 
     <script src="./script.js"></script>
 </body>

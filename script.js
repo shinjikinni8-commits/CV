@@ -1,4 +1,3 @@
 function toggleSection(id) {
-    const el = document.getElementById(id);
-    el.classList.toggle('active');
+    document.getElementById(id).classList.toggle('active');
 }
